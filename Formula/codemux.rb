@@ -1,25 +1,25 @@
 class Codemux < Formula
   desc "Terminal multiplexer for AI coding CLIs with enhanced web UI support"
   homepage "https://www.codemux.dev"
-  version "0.0.6"
+  version "0.0.8"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/codemuxlab/codemux-cli/releases/download/v0.0.6/codemux-aarch64-apple-darwin.tar.xz"
-      sha256 "a0dfc76feb8bcab7a84fc67f2e43dc505bba81ad5a241f8747bf5ff1e12f426f"
+      url "https://github.com/codemuxlab/codemux-cli/releases/download/v0.0.8/codemux-aarch64-apple-darwin.tar.xz"
+      sha256 "a22a35d0b4ac00b03b8307265f88edee17e09f5af055e57c6e4eeee845da0568"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/codemuxlab/codemux-cli/releases/download/v0.0.6/codemux-x86_64-apple-darwin.tar.xz"
-      sha256 "089696df90176bf7b32c56eb28c031910e43ba733c566c0cf0c6994c6198c0fe"
+      url "https://github.com/codemuxlab/codemux-cli/releases/download/v0.0.8/codemux-x86_64-apple-darwin.tar.xz"
+      sha256 "3fb5c406fce57cde682636bc42e265900e8190043220c8075c78c65447dae446"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/codemuxlab/codemux-cli/releases/download/v0.0.6/codemux-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "d462126ea370e85d28e3d104f0b53a25219f7c1b89e7a11355dabae1ed82ea80"
+      url "https://github.com/codemuxlab/codemux-cli/releases/download/v0.0.8/codemux-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "79fd9d56f1b86223f050daa4cabe58172260d4519c431b5024d153ca14b0a00e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/codemuxlab/codemux-cli/releases/download/v0.0.6/codemux-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "07c230367c7f20a9296fc2d443c906c433e9cfff8f909fb2768fc3a7b56a1f92"
+      url "https://github.com/codemuxlab/codemux-cli/releases/download/v0.0.8/codemux-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "7bbffc88f9ec933e65bb06aa48b75e0790eee547b68c8db488566bf2116fa707"
     end
   end
 
@@ -27,6 +27,7 @@ class Codemux < Formula
     "aarch64-apple-darwin":      {},
     "aarch64-unknown-linux-gnu": {},
     "x86_64-apple-darwin":       {},
+    "x86_64-pc-windows-gnu":     {},
     "x86_64-unknown-linux-gnu":  {},
   }.freeze
 
