@@ -1,25 +1,25 @@
 class Codemux < Formula
   desc "Terminal multiplexer for AI coding CLIs - code from anywhere with mobile-ready UI"
   homepage "https://www.codemux.dev"
-  version "0.1.6"
+  version "0.1.7"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/codemuxlab/codemux-cli/releases/download/v0.1.6/codemux-aarch64-apple-darwin.tar.xz"
-      sha256 "59489883eaa16c41f7ed2044ce14dfe9cd901f29d8318c64b087d7122378435e"
+      url "https://github.com/codemuxlab/codemux-cli/releases/download/v0.1.7/codemux-aarch64-apple-darwin.tar.xz"
+      sha256 "52f67718937278b8857ce1d639637e4b31b2e2979c40efedb0a88f846e6037f8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/codemuxlab/codemux-cli/releases/download/v0.1.6/codemux-x86_64-apple-darwin.tar.xz"
-      sha256 "417553e218f2fb84fe97ce74adf57f3feb9e65225d9b3047698ef09fcb499dbf"
+      url "https://github.com/codemuxlab/codemux-cli/releases/download/v0.1.7/codemux-x86_64-apple-darwin.tar.xz"
+      sha256 "18d48775a8266390c558588b35e4f4390ec1e70561bd40e6cd30efdfc5578bc8"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/codemuxlab/codemux-cli/releases/download/v0.1.6/codemux-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "7cfc3609eafcc6857448a18dbe804cbfabd8feda97c9b1a8b765c42ee0a513fa"
+      url "https://github.com/codemuxlab/codemux-cli/releases/download/v0.1.7/codemux-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "586398ef5876b8851b299ab873719cf1784f67bca28fae7b3d365853c288f093"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/codemuxlab/codemux-cli/releases/download/v0.1.6/codemux-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "56b13bf10717cd37d7b41e503ce019173d15d8687c4bd2bb4ef9f39cee59464d"
+      url "https://github.com/codemuxlab/codemux-cli/releases/download/v0.1.7/codemux-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "e67f9f1f029e93630dc5b173ac27d1d5efc1b92d06b68824490cf6f38566aa07"
     end
   end
 
